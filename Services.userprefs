@@ -1,3 +1,20 @@
-﻿<Properties>
+﻿<Properties StartupConfiguration="{0B8AC145-BCC2-41B4-8ECD-4EABFF31C63D}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="../../Downloads/IdentityServer4.Samples-release/Quickstarts/1_ClientCredentials/src/Client/Program.cs">
+    <Files>
+      <File FileName="Services.Identity/Startup.cs" Line="13" Column="6" />
+      <File FileName="Services.Identity/Program.cs" Line="21" Column="1" />
+      <File FileName="Services.Identity/Config.cs" Line="20" Column="1" />
+      <File FileName="../../Downloads/IdentityServer4.Samples-release/Quickstarts/1_ClientCredentials/src/Api/Startup.cs" Line="33" Column="6" />
+      <File FileName="../../Downloads/IdentityServer4.Samples-release/Quickstarts/1_ClientCredentials/src/Api/Program.cs" Line="1" Column="1" />
+      <File FileName="../../Downloads/IdentityServer4.Samples-release/Quickstarts/1_ClientCredentials/src/Api/Controllers/IdentityController.cs" Line="20" Column="2" />
+      <File FileName="../../Downloads/IdentityServer4.Samples-release/Quickstarts/1_ClientCredentials/src/Client/Program.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Services.Identity PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
 </Properties>
