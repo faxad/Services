@@ -25,7 +25,8 @@ namespace Services.Identity
             services.AddIdentityServer()
                     .AddDeveloperSigningCredential()
                     .AddInMemoryApiResources(Config.GetApiResources())
-                    .AddInMemoryClients(Config.GetClients());
+                    .AddInMemoryClients(Config.GetClients())
+                    .AddTestUsers(Config.GetUsers());
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -40,6 +41,8 @@ namespace Services.Identity
                 app.UseExceptionHandler("/Home/Error");
             }
 
+            app.UseIdentityServer();
+
             app.UseStaticFiles();
 
             app.UseMvc(routes =>
@@ -48,8 +51,6 @@ namespace Services.Identity
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
-
-            app.UseIdentityServer();
         }
     }
 }

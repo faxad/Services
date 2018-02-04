@@ -9,3 +9,14 @@
 /Users/MyMac/Workspace/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.AssemblyInfo.cs
 /Users/MyMac/Workspace/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.dll
 /Users/MyMac/Workspace/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.pdb
+/home/fawad/Playground/Services/Services.Identity/bin/Debug/netcoreapp2.0/Services.Identity.deps.json
+/home/fawad/Playground/Services/Services.Identity/bin/Debug/netcoreapp2.0/Services.Identity.runtimeconfig.json
+/home/fawad/Playground/Services/Services.Identity/bin/Debug/netcoreapp2.0/Services.Identity.runtimeconfig.dev.json
+/home/fawad/Playground/Services/Services.Identity/bin/Debug/netcoreapp2.0/Services.Identity.dll
+/home/fawad/Playground/Services/Services.Identity/bin/Debug/netcoreapp2.0/Services.Identity.pdb
+/home/fawad/Playground/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.csprojResolveAssemblyReference.cache
+/home/fawad/Playground/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.csproj.CoreCompileInputs.cache
+/home/fawad/Playground/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.AssemblyInfoInputs.cache
+/home/fawad/Playground/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.AssemblyInfo.cs
+/home/fawad/Playground/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.dll
+/home/fawad/Playground/Services/Services.Identity/obj/Debug/netcoreapp2.0/Services.Identity.pdb
