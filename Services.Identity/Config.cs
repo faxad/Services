@@ -16,7 +16,7 @@ namespace Services.Identity
         {
             return new List<ApiResource>
             {
-                new ApiResource("api1", "My API")
+                new ApiResource("api", "Backend API")
             };
         }
 
@@ -26,43 +26,57 @@ namespace Services.Identity
             {
                 new Client
                 {
-                    ClientId = "client",
-                    ClientName = "Achme Client",
+                    ClientId = "client_001",
+                    ClientName = "Client - Credentials Client",
 
-                    // no interactive user, use the clientid/secret for authentication
-                    // AllowedGrantTypes = GrantTypes.ClientCredentials,
-
-                    // no interactive user
-                    // use username/password in addition to clientid/secret for authentication
-                    // AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                    AllowedGrantTypes = GrantTypes.ClientCredentials,
 
                     ClientSecrets =
                     {
                         new Secret("secret".Sha256())
                     },
 
-                    // scopes that client has access to
-                    AllowedScopes = { "api1" }
+                    AllowedScopes = { "api" }
                 },
-
-                // OpenID Connect implicit flow client (MVC)
                 new Client
                 {
-                    ClientId = "mvc",
+                    ClientId = "client_002",
+                    ClientName = "Client - Resource Owner Password",
+
+                    AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+
+                    AllowedScopes = { "api" }
+                },
+                new Client
+                {
+                    ClientId = "client_003",
+                    ClientName = "Client - Implicit",
                     AllowedGrantTypes = GrantTypes.Implicit,
-
-                    // where to redirect to after login
-                    RedirectUris = { "http://localhost:5002/signin-oidc" },
-
-                    // where to redirect to after logout
-                    PostLogoutRedirectUris = { "http://localhost:5002/signout-callback-oidc" },
+                    AllowAccessTokensViaBrowser = true,
+                    RedirectUris = { "http://www.google.com" },
+                    PostLogoutRedirectUris = { "http://www.google.com" },
 
                     AllowedScopes = new List<string>
                     {
+                        "api",
                         IdentityServerConstants.StandardScopes.OpenId,
                         IdentityServerConstants.StandardScopes.Profile
                     }
                 }
+            };
+        }
+
+        public static IEnumerable<IdentityResource> GetIdentityResources()
+        {
+            return new List<IdentityResource>
+            {
+                new IdentityResources.OpenId(),
+                new IdentityResources.Profile(),
             };
         }
 

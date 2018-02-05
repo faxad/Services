@@ -26,6 +26,7 @@ namespace Services.Identity
                     .AddDeveloperSigningCredential()
                     .AddInMemoryApiResources(Config.GetApiResources())
                     .AddInMemoryClients(Config.GetClients())
+                    .AddInMemoryIdentityResources(Config.GetIdentityResources())
                     .AddTestUsers(Config.GetUsers());
         }
 
