@@ -63,10 +63,32 @@ namespace Services.Identity
 
                     AllowedScopes = new List<string>
                     {
-                        "api",
                         IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api"
                     }
+                },
+                new Client
+                {
+                    ClientId = "client_004",
+                    ClientName = "Client - Hybrid",
+                    AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
+
+                    ClientSecrets =
+                    {
+                        new Secret("secret".Sha256())
+                    },
+
+                    RedirectUris = { "http://www.google.com" },
+                    PostLogoutRedirectUris = { "http://www.google.com" },
+
+                    AllowedScopes =
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api"
+                    },
+                    AllowOfflineAccess = true
                 }
             };
         }
