@@ -1,0 +1,7 @@
+# Build results
+/obj/**
+
+# macOS custom attributes container
+.DS_Store
+
+
